@@ -1,0 +1,9 @@
+---
+- name: Install Pip
+  hosts: myhosts
+
+  tasks:
+  - name: Install Pip
+    yum:
+      name: pip
+      state: present
